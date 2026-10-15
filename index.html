@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Happy birthday, Charinwa</title>
+    <meta
+      name="description"
+      content="A birthday page for Charinwa on 15/10/2026, with wishes, riddles, a gallery, and a note she can send on WhatsApp."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <canvas id="confetti" aria-hidden="true"></canvas>
+    <div class="butterflies" aria-hidden="true">
+      <svg class="butterfly butterfly--1" viewBox="0 0 80 60"><use href="#butterfly-shape" /></svg>
+      <svg class="butterfly butterfly--2" viewBox="0 0 80 60"><use href="#butterfly-shape" /></svg>
+      <svg class="butterfly butterfly--3" viewBox="0 0 80 60"><use href="#butterfly-shape" /></svg>
+      <svg class="butterfly butterfly--4" viewBox="0 0 80 60"><use href="#butterfly-shape" /></svg>
+    </div>
+    <svg class="sprite" aria-hidden="true">
+      <defs>
+        <g id="butterfly-shape">
+          <path fill="#60a5fa" d="M38 30C28 6 6 8 8 28c-4 14 14 22 30 8Z" />
+          <path fill="#60a5fa" d="M42 30c10-24 32-22 30-2 4 14-14 22-30 8Z" />
+          <path fill="#2563eb" d="M38 32C26 38 14 52 22 58c10-2 16-12 18-24Z" />
+          <path fill="#2563eb" d="M42 32c12 6 24 20 16 26-10-2-16-12-18-24Z" />
+          <path fill="#1e3a8a" d="M40 16c2 10 2 26 0 40-2-14-2-30 0-40Z" />
+          <path fill="none" stroke="#dbeafe" stroke-width="1.4" stroke-linecap="round" d="M40 16C36 8 30 6 26 4M40 16c4-8 10-10 14-12" />
+        </g>
+      </defs>
+    </svg>
+
+    <header class="hero">
+      <p class="cake" role="img" aria-label="Birthday cake">🎂</p>
+      <p class="date">15/10/2026</p>
+      <p class="eyebrow">For Charinwa</p>
+      <h1>Happy Birthday, Charinwa!</h1>
+      <p class="lede">
+        Your smile lights the room, and your eyes are radiant. Today, 15 October 2026, is for celebrating the person you are.
+      </p>
+      <div class="timer" aria-live="polite">
+        <p id="timer-label" class="timer-label">Until 15/10/2026</p>
+        <div class="timer-grid">
+          <span><strong id="t-days">00</strong>Days</span>
+          <span><strong id="t-hours">00</strong>Hours</span>
+          <span><strong id="t-mins">00</strong>Minutes</span>
+          <span><strong id="t-secs">00</strong>Seconds</span>
+        </div>
+      </div>
+      <a class="button" href="#guestbook">Drop a wish</a>
+    </header>
+
+    <main>
+      <section aria-labelledby="highlights-heading">
+        <h2 id="highlights-heading">About you</h2>
+        <p class="section-note">
+          Your smile is warm and completely yours, and your eyes are radiant. Looking at you, I see someone calm, bright, and sure of herself. I am proud of you as a person: of how you show up, the care you give, and who you keep becoming.
+        </p>
+        <div class="highlights">
+          <article class="card">
+            <h3>Her smile</h3>
+            <p>Soft, easy, and completely hers. Even a quiet smile from you changes the feeling of a room.</p>
+          </article>
+          <article class="card">
+            <h3>Radiant eyes</h3>
+            <p>They catch the light and give it back, bright and steady, the kind people remember after they leave.</p>
+          </article>
+          <article class="card">
+            <h3>That face</h3>
+            <p>Sunlight looks like it was made for you. You look composed, warm, and beautiful without trying.</p>
+          </article>
+          <article class="card">
+            <h3>Proud of her</h3>
+            <p>Proud of how she shows up, the care she gives, and the person she keeps becoming.</p>
+          </article>
+          <article class="card">
+            <h3>The way she carries a day</h3>
+            <p>In a floral dress or in an ordinary room, she still looks like the reason the picture was taken.</p>
+          </article>
+          <article class="card">
+            <h3>15/10/2026</h3>
+            <p>This date is hers. A whole day set aside to say she is celebrated, respected, and deeply loved.</p>
+          </article>
+        </div>
+      </section>
+
+      <section aria-labelledby="gallery-heading">
+        <h2 id="gallery-heading">Charinwa, today</h2>
+        <p class="section-note">Three pictures of you. Open one to see it larger.</p>
+        <div class="gallery">
+          <button type="button" class="polaroid" data-caption="That quiet smile. Warm, easy, and completely yours.">
+            <img src="photos/charinwa-smile.jpg" alt="Charinwa smiling softly in an orange floral top" />
+            <span>Her smile</span>
+          </button>
+          <button type="button" class="polaroid polaroid--light" data-caption="Sunlight finds you, and your eyes still look radiant.">
+            <img src="photos/charinwa-light.jpg" alt="Charinwa standing in the sunlight, looking upward" />
+            <span>In the light</span>
+          </button>
+          <button type="button" class="polaroid" data-caption="Even an ordinary room looks better because you are in it.">
+            <img src="photos/charinwa-look.jpg" alt="Charinwa indoors in an orange floral top, looking to the side" />
+            <span>That look</span>
+          </button>
+        </div>
+      </section>
+
+      <section aria-labelledby="wishes-heading">
+        <h2 id="wishes-heading">Birthday wishes</h2>
+        <ul class="wishes">
+          <li>May this year feel light in your hands and full in your heart.</li>
+          <li>May your smile keep finding reasons, and may people be worthy of it.</li>
+          <li>May the days ahead be kind to the person you already are.</li>
+          <li>May you be celebrated on ordinary Tuesdays, not only on 15/10/2026.</li>
+          <li>May your radiant eyes see good news more often than worry.</li>
+          <li>May you be proud of yourself the way I am proud of you.</li>
+          <li>May the year ahead look as bright as the light on your face.</li>
+          <li>May rooms notice you the way I do: first your smile, then your eyes, then the person you are.</li>
+          <li>May kindness come back to you in people who stay.</li>
+          <li>May rest find you as easily as laughter does.</li>
+          <li>May you walk into new places already sure of yourself.</li>
+          <li>May this birthday feel as warm as you look in these pictures.</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="riddles-heading">
+        <h2 id="riddles-heading">Birthday riddles</h2>
+        <p class="section-note">Tap a riddle to see the answer.</p>
+        <div class="riddles">
+          <article class="riddle">
+            <h3>1</h3>
+            <p>I have no voice, but I still say happy birthday. I am folded, signed, and kept. What am I?</p>
+            <button type="button" aria-expanded="false">Show answer</button>
+            <p class="answer" hidden>A birthday card.</p>
+          </article>
+          <article class="riddle">
+            <h3>2</h3>
+            <p>I am counted once a year, I never go backwards, and candles try to keep up with me. What am I?</p>
+            <button type="button" aria-expanded="false">Show answer</button>
+            <p class="answer" hidden>Your age.</p>
+          </article>
+          <article class="riddle">
+            <h3>3</h3>
+            <p>The more of me you give away on a birthday, the more of me you have. What am I?</p>
+            <button type="button" aria-expanded="false">Show answer</button>
+            <p class="answer" hidden>A smile. Yours, especially.</p>
+          </article>
+          <article class="riddle">
+            <h3>4</h3>
+            <p>I have hands and a face, but I cannot clap or see. I tell you when the cake should arrive. What am I?</p>
+            <button type="button" aria-expanded="false">Show answer</button>
+            <p class="answer" hidden>A clock.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="panel" id="guestbook" aria-labelledby="guest-heading">
+        <h2 id="guest-heading">Drop a wish</h2>
+        <p class="section-note">
+          Leave a note for Charinwa. It appears on the board, then opens WhatsApp so it can be sent to me.
+        </p>
+        <form id="wish-form">
+          <div class="field">
+            <label for="guest-name">Name</label>
+            <input id="guest-name" name="name" type="text" maxlength="40" autocomplete="name" placeholder="Your name" />
+          </div>
+          <div class="field">
+            <label for="birthday-wish">Wish</label>
+            <textarea id="birthday-wish" name="wish" rows="4" maxlength="500" required placeholder="Happy birthday, Charinwa…"></textarea>
+          </div>
+          <div class="emojis" role="group" aria-label="Add an emoji">
+            <button type="button" data-emoji="🎉">🎉</button>
+            <button type="button" data-emoji="💖">💖</button>
+            <button type="button" data-emoji="✨">✨</button>
+            <button type="button" data-emoji="🎂">🎂</button>
+            <button type="button" data-emoji="🦋">🦋</button>
+            <button type="button" data-emoji="😊">😊</button>
+          </div>
+          <p id="wish-error" class="form-error" role="alert" hidden>Write a wish before you send it.</p>
+          <button type="submit" class="button">Send the wish</button>
+        </form>
+        <div id="wish-wall" class="wish-wall" aria-live="polite"></div>
+      </section>
+
+      <section class="panel" aria-labelledby="gift-heading">
+        <h2 id="gift-heading">What do you want for your birthday?</h2>
+        <p class="section-note">Look through the gifts. One of them is the one you can choose.</p>
+        <form id="gift-form">
+          <fieldset>
+            <legend>Choose a gift</legend>
+            <div class="gifts">
+              <label class="gift"><input type="radio" name="gift" value="Designer handbag" /><span>Designer handbag 👜</span></label>
+              <label class="gift"><input type="radio" name="gift" value="New phone" /><span>New phone 📱</span></label>
+              <label class="gift"><input type="radio" name="gift" value="Jewelry" /><span>Jewelry 💍</span></label>
+              <label class="gift"><input type="radio" name="gift" value="New dress" /><span>New dress 👗</span></label>
+              <label class="gift"><input type="radio" name="gift" value="Baby powder" /><span>Baby powder 🧴</span></label>
+              <label class="gift"><input type="radio" name="gift" value="Chocolates" /><span>Chocolates 🍫</span></label>
+            </div>
+          </fieldset>
+          <p id="gift-message" class="gift-message" aria-live="polite"></p>
+          <button type="submit" id="gift-submit" class="button" disabled>Ask for my gift on WhatsApp</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p id="surprise-note" hidden>Charinwa, this day is louder because you are in it. Happy birthday.</p>
+      <button type="button" id="surprise" class="button button-gold">A little surprise</button>
+      <p>With all my love, from someone who is very proud of you 💖</p>
+      <p><a id="share-link" href="https://wa.me/?text=Happy%20birthday%2C%20Charinwa%20%E2%80%94%2015%2F10%2F2026">Share the greeting on WhatsApp</a></p>
+    </footer>
+
+    <dialog id="lightbox">
+      <button type="button" id="lightbox-close">Close</button>
+      <div id="lightbox-art"></div>
+      <p id="lightbox-caption"></p>
+    </dialog>
+
+    <script src="script.js"></script>
+  </body>
+</html>
